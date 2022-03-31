@@ -1,0 +1,28 @@
+body {            
+    background-color: rgba(240, 247, 245, 0.678);
+    color: rgb(129, 128, 32);
+    padding-top: 50px;
+    padding-left: 70px;
+    width: 200px;
+    background-image: url("cesar.jpg");
+    background-size: 800px;
+    background-repeat: no-repeat;
+    background-position-x: 150px;    
+}
+
+button {
+    cursor: crosshair;
+}
+
+input {
+    background-color: rgb(210, 211, 165);
+    outline-style: solid;
+    outline-color: rgb(123, 143, 32);
+    outline-width: 2px;    
+}
+
+#grupo {    
+    border: 1px solid rgb(153, 151, 32) ;
+    padding: 10px;
+    padding-bottom: 10px;
+}
