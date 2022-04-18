@@ -6,6 +6,7 @@ function inicio() {
     for (b of botones) {
         b.addEventListener("click", cifrar);
     }
+    document.getElementById("mensaje").focus();
 }
 
 
