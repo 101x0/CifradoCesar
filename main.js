@@ -1,5 +1,4 @@
 window.onload = inicio;
-let operacion;
 let operacion = "cifrar";
 
 function inicio() {
