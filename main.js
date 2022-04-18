@@ -1,5 +1,7 @@
 window.onload = inicio;
 let operacion;
+let operacion = "cifrar";
+
 function inicio() {
 
     let botones = document.getElementsByTagName("button");
@@ -16,7 +18,7 @@ function cifrar(evento) {
     let resultado = "";
     let texto = document.getElementById("mensaje").value;
     texto = texto.toUpperCase().split("");
-    let operacion = evento.target.innerHTML == "cifrar" ? "cifrar" : "";
+    operacion = evento.target.innerHTML == "cifrar" ? "cifrar" : "";
     let desplazamiento = document.getElementById("desplazamiento").value;
     if (isNaN(desplazamiento) || desplazamiento %1 != 0) {
         alert("Debes introducir un numero entero en desplazamiento");
