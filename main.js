@@ -22,6 +22,9 @@ function cifrar(evento) {
         alert("Debes introducir un numero entero en desplazamiento");
     } else {
         desplazamiento = (operacion == "cifrar") ? (desplazamiento % 26 + 26) % 26 : (desplazamiento % 26 - 26) % 26;
+        let labelCifrado = document.getElementById("labelCifrado");
+        labelCifrado.textContent = (operacion == "cifrar") ? "Cifrado" : "Descifrado";
+        
         for (let i = 0; i < texto.length; i++) {
             if (letras.indexOf(texto[i]) != -1) {
                 let posicion = (operacion == "cifrar") ? (letras.indexOf(texto[i]) + desplazamiento) % 26 :
